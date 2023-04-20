@@ -12,7 +12,7 @@ parser.add_argument('--epochs', type=int, default=10, help='Número de épocas d
 args = parser.parse_args()
 
 # Read and process data
-with open(args.data, 'r') as f:
+with open(args.data, 'r', encoding = 'utf-8') as f:
     text = f.read()
 
 # Create a unique character set
