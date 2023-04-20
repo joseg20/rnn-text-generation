@@ -57,8 +57,8 @@ generated_text = generate_text(model, seed_text, char_to_idx, idx_to_char)
 print("Generated text:", generated_text)
 
 # Save the trained model
-torch.save(model.state_dict(), 'models/trained_rnn_model.pth')
+torch.save(model.state_dict(), '../models/trained_rnn_model.pth')
 
 # Load the trained model
 loaded_model = RNN(vocab_size, hidden_size, num_layers, dropout)
-loaded_model.load_state_dict(torch.load('models/trained_rnn_model.pth'))
+loaded_model.load_state_dict(torch.load('../models/trained_rnn_model.pth'))
