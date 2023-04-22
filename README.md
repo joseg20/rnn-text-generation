@@ -40,7 +40,7 @@ This will train the model on the specified text file and save the trained model 
 
 Generate text using the trained model:
 ```bash
-  python main.py --generate --seed_text "Once upon a time" --model_path models/trained_rnn_model.pth
+  python main.py --generate --seed_text "Once upon a time" --model_path ../models/trained_rnn_model.pth
 ```
 This will generate text using the trained model and the seed text "Once upon a time".
 
